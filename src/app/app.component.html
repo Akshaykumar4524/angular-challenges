@@ -7,6 +7,9 @@
     <li>Other</li>
   </ul>
 </app-tool-bar>
+<app-card [iconClasses]="'fa fa-info-circle'" [title]="'Accordian'" [subTitle]="'Components'">
+ <app-accordion body [accordianItems]="accordionItems"></app-accordion>
+</app-card>
 <app-card [iconClasses]="'fa fa-info-circle'" [title]="'Card'" [subTitle]="'Components'">
   <p body>Body</p>
   <p footer>Footer</p>

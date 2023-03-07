@@ -1,4 +1,4 @@
-.card-container{
+.card-container {
   display: grid;
   grid-gap: 10px;
   border-radius: 3px;
@@ -7,9 +7,9 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.header{
+.header {
   display: grid;
-  grid-template-columns:auto 1fr;
+  grid-template-columns: auto 1fr;
   grid-gap: 10px;
   align-items: center;
   padding: 10px;
@@ -17,13 +17,14 @@
   color: white;
 }
 
-.title{
+.title {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: auto 1fr;
   align-items: center;
 }
 
-.body,.footer{
+.body,
+.footer {
   padding: 10px;
 }

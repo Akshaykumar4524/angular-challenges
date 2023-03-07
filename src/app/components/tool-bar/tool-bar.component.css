@@ -1,36 +1,32 @@
-.toolbar-container{
+.toolbar-container {
   background-color: rgb(24, 74, 77);
   color: aliceblue;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns:1fr auto;
+  grid-template-columns: 1fr auto;
   padding: 10px;
   align-items: center;
 }
 
 @media screen and (max-width: 992px) {
-  .toolbar-container{
-    grid-template-columns:1fr
+  .toolbar-container {
+    grid-template-columns: 1fr;
   }
-
 }
 
 :host ::ng-deep ul {
-    display: grid;
-    grid-gap: 10px;
-    grid-auto-flow: column;
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-flow: column;
+}
 
-  }
+:host ::ng-deep li {
+  display: inline;
+}
 
-  :host ::ng-deep li {
-   display: inline;
-
-  }
-
-  /* @media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     :host ::ng-deep li {
       float: none;
       width: 100%;
     }
   } */
-
