@@ -4,7 +4,7 @@ import { Accordian } from './components/accordion/accordian';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'angular-challenges';
@@ -18,6 +18,7 @@ export class AppComponent {
       title: 'Example 2',
       content: 'Exampled Content 2',
       isExpanded: false,
-    }
+    },
   ];
+  public progressValue = 25;
 }

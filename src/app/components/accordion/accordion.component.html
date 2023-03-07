@@ -1,12 +1,8 @@
 <div class="accordian-container">
   <div class="item" *ngFor="let item of accordianItems">
-    <div class="header">
+    <div class="header" (click)="toggle(item)">
       <h4>{{ item.title }}</h4>
-      <i
-        class="fa fa-chevron-down"
-        [class.isExpanded]="item.isExpanded"
-        (click)="toggle(item)"
-      ></i>
+      <i class="fa fa-chevron-down" [class.isExpanded]="item.isExpanded"></i>
     </div>
     <div class="content" *ngIf="item.isExpanded">
       <p>{{ item.content }}</p>
