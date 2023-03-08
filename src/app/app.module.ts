@@ -8,6 +8,7 @@ import { CardComponent } from './components/card/card.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { StartRatingComponent } from './components/start-rating/start-rating.component';
+import { TopOfPageComponent } from './components/top-of-page/top-of-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { StartRatingComponent } from './components/start-rating/start-rating.com
     CardComponent,
     AccordionComponent,
     ProgressBarComponent,
-    StartRatingComponent
+    StartRatingComponent,
+    TopOfPageComponent
   ],
   imports: [
     BrowserModule,

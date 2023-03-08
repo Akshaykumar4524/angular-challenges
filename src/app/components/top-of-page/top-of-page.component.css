@@ -1,0 +1,29 @@
+button {
+  position: fixed;
+  z-index: 2;
+  right: 3%;
+  bottom: 3%;
+  border-radius: 50%;
+  border: none;
+  background-color: red;
+  transition: all 0.3s;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.is-shown {
+  height: 50px;
+  width: 50px;
+  visibility: visible;
+}
+
+i {
+  color: rgb(0, 0, 0);
+  font-size: 0;
+}
+
+.is-shown2 {
+  font-size: 15px;
+}
