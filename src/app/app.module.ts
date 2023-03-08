@@ -9,6 +9,7 @@ import { AccordionComponent } from './components/accordion/accordion.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { StartRatingComponent } from './components/start-rating/start-rating.component';
 import { TopOfPageComponent } from './components/top-of-page/top-of-page.component';
+import { ComponentDocComponent } from './components/component-doc/component-doc.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TopOfPageComponent } from './components/top-of-page/top-of-page.compone
     AccordionComponent,
     ProgressBarComponent,
     StartRatingComponent,
-    TopOfPageComponent
+    TopOfPageComponent,
+    ComponentDocComponent
   ],
   imports: [
     BrowserModule,
