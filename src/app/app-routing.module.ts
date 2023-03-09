@@ -1,16 +1,27 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ComponentDocComponent } from './components/component-doc/component-doc.component';
-import { DirectiveDocComponent } from './directives/directive-doc/directive-doc.component';
-import { PipesDocComponent } from './pipes/pipes-doc/pipes-doc.component';
-import { ServiceDocComponent } from './services/service-doc/service-doc.component';
 
 const routes: Routes = [
-  { path: 'components', component: ComponentDocComponent },
-  {path:'directives',component:DirectiveDocComponent},
-  {path:'pipes',component:PipesDocComponent},
-  {path:'services',component:ServiceDocComponent},
-  { path: '', redirectTo: '/components', pathMatch: 'full' },
+  {
+    path: '',
+    loadChildren: () =>
+      import('./components/components.module').then((m) => m.ComponentsModule),
+  },
+  {
+    path: 'directives',
+    loadChildren: () =>
+      import('./directives/directives.module').then((m) => m.DirectivesModule),
+  },
+  {
+    path: 'pipes',
+    loadChildren: () =>
+      import('./pipes/pipes.module').then((m) => m.PipesModule),
+  },
+  {
+    path: 'services',
+    loadChildren: () =>
+      import('./services/services.module').then((m) => m.ServicesModule),
+  },
 ];
 
 @NgModule({
