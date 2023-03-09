@@ -1,1 +1,14 @@
-<p>pipes-doc works!</p>
+<h1>Pipes</h1>
+<hr />
+<app-card
+  [iconClasses]="'fa fa-info-circle'"
+  [title]="'Truncate'"
+  [subTitle]="'Pipes'"
+>
+  <p body>
+    {{
+      "This post compiles a huge list of Free Printable Reading Comprehension Worksheets that can be easily downloaded. This unique list of Reading Comprehension Passages with Questions and Answers Pdf can be integrated as reading comprehension activities for ESL students."
+        | truncate
+    }}
+  </p>
+</app-card>
