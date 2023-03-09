@@ -10,6 +10,9 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
 import { StartRatingComponent } from './components/start-rating/start-rating.component';
 import { TopOfPageComponent } from './components/top-of-page/top-of-page.component';
 import { ComponentDocComponent } from './components/component-doc/component-doc.component';
+import { DirectiveDocComponent } from './directives/directive-doc/directive-doc.component';
+import { PipesDocComponent } from './pipes/pipes-doc/pipes-doc.component';
+import { ServiceDocComponent } from './services/service-doc/service-doc.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { ComponentDocComponent } from './components/component-doc/component-doc.
     ProgressBarComponent,
     StartRatingComponent,
     TopOfPageComponent,
-    ComponentDocComponent
+    ComponentDocComponent,
+    DirectiveDocComponent,
+    PipesDocComponent,
+    ServiceDocComponent
   ],
   imports: [
     BrowserModule,

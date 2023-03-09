@@ -22,11 +22,9 @@
 
 :host ::ng-deep li {
   display: inline;
+  cursor: pointer;
 }
 
-/* @media screen and (max-width: 600px) {
-    :host ::ng-deep li {
-      float: none;
-      width: 100%;
-    }
-  } */
+:host ::ng-deep li:hover {
+  color: rgb(255, 242, 0);
+}
