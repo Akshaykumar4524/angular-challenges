@@ -1,0 +1,20 @@
+<div class="credit-card-container">
+  <div class="input-container">
+    <ng-container [ngSwitch]="creditcardNumbers[0]">
+      <i *ngSwitchCase="'3'" class="fa fa-cc-amex"></i>
+      <i *ngSwitchCase="'4'" class="fa fa-cc-visa"></i>
+      <i *ngSwitchCase="'5'" class="fa fa-cc-mastercard"></i>
+      <i *ngSwitchCase="'6'" class="fa fa-cc-discover"></i>
+      <i *ngSwitchDefault class="fa fa-credit-card"></i>
+    </ng-container>
+    <input
+      id="input-div"
+      type="text"
+      [(ngModel)]="creditcardNumbers"
+      [readOnly]="isReadOnly"
+      required
+      maxlength="16"
+      (change)="onChange($event)"
+    />
+  </div>
+</div>

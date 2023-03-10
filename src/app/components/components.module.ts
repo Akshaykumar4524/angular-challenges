@@ -7,6 +7,8 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { StartRatingComponent } from './start-rating/start-rating.component';
 import { SharedModule } from '../shared/shared.module';
+import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { SharedModule } from '../shared/shared.module';
     AccordionComponent,
     ProgressBarComponent,
     StartRatingComponent,
+    CreditCardInputComponent,
   ],
-  imports: [CommonModule, ComponentsRoutingModule, SharedModule],
+  imports: [CommonModule, ComponentsRoutingModule, SharedModule, FormsModule],
 })
 export class ComponentsModule {}
