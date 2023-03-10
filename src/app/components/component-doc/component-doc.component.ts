@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Accordian } from '../accordion/accordian';
+import { LoaderType } from '../loader/models/loader-type';
 
 @Component({
   selector: 'app-component-doc',
@@ -21,6 +22,7 @@ export class ComponentDocComponent implements OnInit {
     },
   ];
   public progressValue = 25;
+  public loaderType: LoaderType = LoaderType.Circular;
   constructor() {}
 
   ngOnInit(): void {}

@@ -9,6 +9,7 @@ import { StartRatingComponent } from './start-rating/start-rating.component';
 import { SharedModule } from '../shared/shared.module';
 import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
 import { FormsModule } from '@angular/forms';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms';
     ProgressBarComponent,
     StartRatingComponent,
     CreditCardInputComponent,
+    LoaderComponent,
   ],
   imports: [CommonModule, ComponentsRoutingModule, SharedModule, FormsModule],
 })
