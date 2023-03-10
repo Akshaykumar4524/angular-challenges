@@ -12,3 +12,14 @@
     }}
   </p>
 </app-card>
+<app-card
+  [iconClasses]="'fa fa-info-circle'"
+  [title]="'Credit-Card-Formatter'"
+  [subTitle]="'Pipes'"
+>
+<div body>
+  <p>{{'1111222233334444' | creditCardFormatter}}</p>
+    <p>{{'111111111111111111111111111111' | creditCardFormatter}}</p>
+    <p>{{'a111222233334444' | creditCardFormatter}}</p>
+</div>
+</app-card>
