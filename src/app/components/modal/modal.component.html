@@ -7,4 +7,4 @@
     <ng-content></ng-content>
   </div>
 </div>
-<div class="modal-overlay" [class.is-hidden]="isOn"></div>
+<div class="modal-overlay" (click)="close()" [class.is-hidden]="isOn"></div>
