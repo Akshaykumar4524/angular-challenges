@@ -13,6 +13,7 @@ import { LoaderComponent } from './loader/loader.component';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
 import { ToggleComponent } from './toggle/toggle.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ToggleComponent } from './toggle/toggle.component';
     TwitterPostComponent,
     LinkedinPostComponent,
     ToggleComponent,
+    ModalComponent,
   ],
   imports: [CommonModule, ComponentsRoutingModule, SharedModule, FormsModule],
 })
