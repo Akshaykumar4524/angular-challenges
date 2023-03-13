@@ -2,18 +2,32 @@
 <hr />
 <app-card
   [iconClasses]="'fa fa-info-circle'"
+  [title]="'Quote'"
+  [subTitle]="'Components'"
+>
+  <app-quote
+    body
+    [quote]="'To produce a mighty book, you must choose a mighty theme.'"
+    [author]="'Herman Melville'"
+    [occupation]="
+      'novelist, short story writer, and poet of the American Renaissance period'
+    "
+  ></app-quote>
+</app-card>
+<app-card
+  [iconClasses]="'fa fa-info-circle'"
   [title]="'Modal'"
   [subTitle]="'Components'"
 >
- <div body>
-  <app-modal [title]="'Modal Example'" #modal>
-    <p>Some Content</p>
-  </app-modal>
- </div>
+  <div body>
+    <app-modal [title]="'Modal Example'" #modal>
+      <p>Some Content</p>
+    </app-modal>
+  </div>
 
- <div footer>
-  <button (click)="modal.open()">Call Model</button>
- </div>
+  <div footer>
+    <button (click)="modal.open()">Call Model</button>
+  </div>
 </app-card>
 <app-card
   [iconClasses]="'fa fa-info-circle'"
